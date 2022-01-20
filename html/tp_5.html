@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fiche d’inscription</h1>
+    <form>
+      <div>
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" placeholder="Ex : Toto" />
+      </div>
+      <div>
+        <label for="prenom">Prenom : </label>
+        <input type="text" id="prenom" placeholder="Ex : André" />
+      </div>
+      <div>
+        <label for="lieu">Lieu de naissance : </label>
+        <input
+          type="text"
+          id="lieu"
+          placeholder="Ex : France, Paris, 1 rue Hugo"
+        />
+      </div>
+      <div>
+        <label for="date">Date de naissance : </label>
+        <input type="date" id="date" placeholder="Ex : 12/11/2000" />
+      </div>
+      <div>
+        <label for="pays">Pays d'origine : </label>
+        <select id="pays">
+          <option>-- Veuillez choisir un pays --</option>
+          <option>France</option>
+          <option>Espagne</option>
+          <option>Italie</option>
+        </select>
+      </div>
+      <div>
+        <label for="civilité">Civilité : </label><br />
+        <input type="radio" name="genre" />M<br />
+        <input type="radio" name="genre" />Mme<br />
+      </div>
+      <div>
+        <label for="moyenne en BAC">Pourcentage ou moyenne en BAC : </label>
+
+        <input type="number" id="moyenne en BAC" placeholder="Ex : 10" />
+      </div>
+      <div>
+        <label for="formation">Formation : </label>
+
+        <input type="text" id="formation" placeholder="Ex : bts" />
+      </div>
+      <div>
+        <label for="d'autre formation"> D'autre formation : </label>
+
+        <input type="text" id="d'autre formation" placeholder="Ex : bts" />
+      </div>
+      <div>
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="Ex : zozor@gmail.com" />
+      </div>
+
+      <div>
+        <label for="telephone">Téléphone : </label>
+        <!-- <span style="background-color: lightgray">+33</span> -->
+        <input type="number" id="telephone" placeholder="Ex : 07777777777" />
+      </div>
+
+      <div>
+        <label for="lettre">Lettre de motivation : </label>
+        <textarea id="genre" placeholder="Lettre de motivation"></textarea>
+      </div>
+      <input type="submit" value="Envoyer" />
+    </form>
+  </body>
+</html>

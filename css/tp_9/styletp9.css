@@ -1,0 +1,18 @@
+.parent {
+    border: none;
+    height: 200px;
+    
+}
+.child {
+   height: 100px;
+   display: inline-block;
+   background-color: crimson;
+   width: 30%;
+   color: darkkhaki;
+   font-weight: bold;
+   text-align: center;
+   padding-top: 40px;
+   text-decoration: underline ;
+
+}
+

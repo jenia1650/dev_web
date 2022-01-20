@@ -1,0 +1,22 @@
+body {
+  background-color: lightgray;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+.centre {
+  text-align: center;
+}
+.chron {
+  color: red;
+}
+.photo {
+  border: 5px solid red;
+  padding-top: 50px;
+  background-color: #313030;
+  text-align: center;
+}
+.photo1 {
+  background-color: #313030;
+  color: aliceblue;
+}
