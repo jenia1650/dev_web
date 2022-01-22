@@ -5,17 +5,18 @@ body {
     display: grid;
     
     grid-auto-rows: 400px;
-    grid-gap: 25px;
+    grid-gap: 15px;
     grid-template-areas:
         'one deux trois quatre'
         'cinq cinq cinq cinq'
         'six six sept sept'
         'six six huit huit'
         'neuf neuf neuf neuf';
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
 }
 
 .item {
@@ -31,41 +32,50 @@ body {
 
 .item:nth-child(1) {
     grid-area: one;
+    height: 100px;
     
 }
 
 .item:nth-child(2) {
     grid-area: deux;
+    height: 100px;
     
 }
 
 .item:nth-child(3) {
     grid-area: trois;
+    height: 100px;
    
 }
 
 .item:nth-child(4) {
     grid-area: quatre;
+    height: 100px;
     
 }
 
 .item:nth-child(5) {
     grid-area: cinq;
+    height: 250px;
 }
 
 .item:nth-child(6) {
     grid-area: six;
+    height: 570px;
 }
 
 .item:nth-child(7) {
     grid-area: sept;
+    height: 160px;
 }
 
 .item:nth-child(8) {
     grid-area: huit;
+    height: 160px;
 }
 .item:nth-child(9){
     grid-area: neuf;
+    height: 200px;
 }
 @media screen and (min-width: 1000px) {
     .container {
