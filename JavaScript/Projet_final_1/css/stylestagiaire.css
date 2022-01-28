@@ -1,35 +1,34 @@
 body {
-  /* text-align: center; */
-  margin: 10px 10px;
-  /* border: 1px solid black; */
+  padding: 1em 1em;
 }
-
-.nav_bar {
+.parent {
   display: grid;
-  border: 1px solid black;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 10fr repeat(2, 2fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
 }
-
+.nav1,
+.centre,
+.adresse,
+.newsletter {
+  border: 1px solid black;
+}
 .nav1 {
-  margin-left: 10px;
-  width: 100px;
-  font-weight: bolder;
+  grid-area: 1 / 1 / 1 / 2;
+  /* background-color: yellow; */
 }
-
-.nav2 {
-  margin-left: 400px;
-  width: 100px;
+.centre {
+  grid-area: 2 / 1 / 3 / 2;
+  /* background-color: purple; */
 }
-
-.nav3 {
-  margin-left: 100px;
-  width: 150px;
+.adresse {
+  grid-area: 3 / 1 / 4 / 2;
+  /* background-color: blue; */
 }
-
-.Stagiaires {
-  border: 1px solid black;
-  height: 1000px;
+.newsletter {
+  grid-area: 4 / 1 / 5 / 2;
+  /* background-color: red; */
 }
 
 .table-primary,
@@ -38,30 +37,48 @@ body {
   margin: 20px;
 }
 
-textarea {
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  margin: 20px;
-  padding: 10px;
-  /* max-width: 150%; */
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 1px #999;
+.story {
+  margin-left: 60px;
+  background-color: rgb(241, 218, 187);
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
-.footer {
-  border: 1px solid black;
-  margin-top: 10px;
-}
-
-.child1 {
-  display: inline-block;
-  width: 40%;
-  color: black;
-}
-.child1:nth-child(1) {
-  grid-area: one;
-  border-right: 1px solid;
-  width: 45%;
+@media screen and (min-width: 576px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2rem 50rem 5rem; /* choix hauteur*/
+    gap: 10px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav1 nav1 nav1 nav1 nav1 nav1"
+      "centre centre centre centre centre centre"
+      "adresse adresse adresse newsletter newsletter newsletter";
+  }
+  .nav1 {
+    grid-area: nav1;
+    /* background-color: yellow; */
+  }
+  .adresse {
+    grid-area: adresse;
+    /* background-color: blue; */
+  }
+  .newsletter {
+    grid-area: newsletter;
+    /* background-color: red; */
+  }
+  .centre {
+    grid-area: centre;
+    /* background-color: purple; */
+  }
+  .nav1,
+  .centre,
+  .adresse,
+  .newsletter {
+    border: 1px solid black;
+  }
 }

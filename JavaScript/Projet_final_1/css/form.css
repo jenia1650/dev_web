@@ -6,8 +6,8 @@ body {
 }
 .parent {
   display: grid;
+  height: 2rem;
   
-  height: 40px;
   /*margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
@@ -40,6 +40,7 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
 }*/
+
 .parent1 {
   border: 1px solid;
   margin-left: 5px;
@@ -47,12 +48,13 @@ body {
   margin-bottom: 5px;
 }
 .child1 {
-  height: 200px;
+  height: 5rem;
   display: inline-block;
   background-color: white;
   width: 40%;
   color: black;
   font-weight: bold;
+
 }
 .child1:nth-child(1) {
   grid-area: one;
@@ -62,7 +64,7 @@ body {
 }
 child1:nth-child(2) {
   grid-area: deux;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .child:nth-child(1) {
@@ -98,6 +100,7 @@ child1:nth-child(2) {
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
+  margin-top: 10px;
   padding-left: 10px;
 }
 .form {
