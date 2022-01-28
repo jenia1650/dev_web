@@ -18,36 +18,64 @@
 
     <title>Contenu projet “Projet final”</title>
   </head>
-  <body>
-      <div class="parent">
-          <div class="child">
-           LOGO
-          </div>
-          <div class="child">
-           Accueil
-          </div> 
-          <div class="child">
-           Nos stagiares
-          </div>
+  <body class="main1">
 
-      
+      <div class="container-sm parent">
+          <div class="item1 navbar navbar-expand-sm navbar-light bg-light">
+           <div class="container-fluid">
+           <a class="navbar-brand" href="../index.html">LOGO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul
+              class="navbar-nav me-auto mb-2  justify-content-end flex-grow-1"
+            >
+
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./form.html">Accueil</a>
+           
+          </li> 
+          <li class="nav-item">
+             <a class="nav-link" href="./stagiaire.html">Nos stagiares</a> 
+           
+          </li>
+          </ul>
+       </div>
+      </div>
       </div>
       <div class="donnees">
-      <h4 >Nous contacter</h4>
+      <h4 class="titre1">Nous contacter</h4>
       <form >
       <div >
-        <label for="nom">Votre nom  </label
-        ><input class="form" type="text" id="nom" name="nom" required />
+        <label class="col-sm-2 col-form-label col-form-label-sm" for="nom">Votre nom  </label
+        >
+        <div class="col-sm-10">
+        <input class="form form-control form-control-sm" type="text" id="nom" name="nom" required />
         <p id="err_nom"></p>
       </div>
+     </div>
       <div >
-        <label for="prenom">Votre prenom </label
-        ><input class="form" type="text" id="prenom" name="prenom"  />
+        <label class="col-sm-2 col-form-label col-form-label-sm" for="prenom">Votre prenom </label
+        >
+        <div class="col-sm-10">
+        <input class="form form-control form-control-sm" type="text" id="prenom" name="prenom"  />
         <p id="err_prenom"></p>
       </div>
+      </div>
       <div >
-        <label for="email">Votre email  </label
-        ><input class="form"
+        <label class="col-sm-2 col-form-label col-form-label-sm" for="email">Votre email  </label
+        >
+        <div class="col-sm-10">
+        <input class="form form-control form-control-sm"
           type="email"
           id="email"
           name="email"
@@ -55,9 +83,11 @@
         />
         <p id="err_email"></p>
       </div>
+      </div>
       <div >
-        <label for="etudes">Etudes faites  </label>
-        <select class="form" id="etudes">
+        <label class="col-sm-2 col-form-label col-form-label-sm" for="etudes">Etudes faites  </label>
+        <div class="col-sm-10">
+        <select class="form form-control form-control-sm" id="etudes">
           <option>-- Veuillez choisir  --</option>
           <option>Math</option>
           <option>Programmation</option>
@@ -66,10 +96,13 @@
         </select>
         <p id="err_etudes"></p>
       </div>
-      
+      </div>
       <div >
-        <label for="bio">Bio  </label>
-        <textarea class="form" id="bio" placeholder="bio"></textarea>
+        <label class="col-sm-2 col-form-label col-form-label-sm" for="bio">Bio  </label>
+        <div class="col-sm-10">
+        <textarea class="form form-control form-control-sm" id="bio" placeholder="bio"></textarea>
+        <p id="err_bio"></p>
+      </div>
       </div>
       <input  class="input-group-text" for="inputGroupFile01" id="btnSubmit" type="submit" value="Ajouter" />
       <!-- <button id="btnSubmit" type="submit">Créer</button> -->
@@ -101,5 +134,10 @@
     ></script>
     <script src="../js/app.js" type="module"></script>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>
 

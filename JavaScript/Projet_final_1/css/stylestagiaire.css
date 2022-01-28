@@ -1,0 +1,67 @@
+body {
+  /* text-align: center; */
+  margin: 10px 10px;
+  /* border: 1px solid black; */
+}
+
+.nav_bar {
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.nav1 {
+  margin-left: 10px;
+  width: 100px;
+  font-weight: bolder;
+}
+
+.nav2 {
+  margin-left: 400px;
+  width: 100px;
+}
+
+.nav3 {
+  margin-left: 100px;
+  width: 150px;
+}
+
+.Stagiaires {
+  border: 1px solid black;
+  height: 1000px;
+}
+
+.table-primary,
+.btn,
+.List {
+  margin: 20px;
+}
+
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin: 20px;
+  padding: 10px;
+  /* max-width: 150%; */
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+.footer {
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.child1 {
+  display: inline-block;
+  width: 40%;
+  color: black;
+}
+.child1:nth-child(1) {
+  grid-area: one;
+  border-right: 1px solid;
+  width: 45%;
+}
